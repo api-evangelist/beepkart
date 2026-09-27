@@ -1,23 +1,51 @@
 aid: beepkart
+
 name: BeepKart
-description: 'BeepKart is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'BeepKart was an Indian online marketplace for buying and selling used two‑wheelers. Founded in Bangalore, it raised approximately $18 million in funding and operated a platform connecting sellers and buyers of pre‑owned motorcycles and scooters. In 2024 the company ceased operations and began seeking to sell its assets, as reported by multiple news outlets. The platform is no longer active, and its website is offline.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beepkart/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Marketplace
+- Used Vehicles
+- India
+- E-commerce
+- Startup
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beepkart-hosts.yml
+- type: Vendors
+  url: vendors/beepkart-vendors.yml
+- type: DomainSecurity
+  url: security/beepkart-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
